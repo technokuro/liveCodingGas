@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <form id="nameForm" onsubmit="participation(event)">
+      <input type="text" id="name" placeholder="名前入力">
+      <button type="submit">参加</button>
+    </form>
+
+    <ul id="userList"></ul>
+
+    <button onclick="">ゲームスタート</button>
+    <script>
+      // 初期処理、ユーザ一覧を取得
+      window.onload = function() {
+        updateUserList();
+      };
+
+      // 参加
+      function participation(event) {
+        var formData = new FormData(document.getElementById("nameForm"));
+        var name = formData.get("name").trim();
+
+        if ( name !== "" ) {
+          // nameがあればdealerをPOST？
+        }
+      }
+
+      // ユーザ一覧取得
+      function updateUserList() {
+        // userListを取得
+        userList.innerHTML = "";
+        // 取得結果をユーザ一覧に追加する？
+        userList.appendChild();
+      }
+
+      // ゲーム開始
+      function startGame() {
+        // ゲーム開始処理をコール
+      }
+    </script>
+  </body>
+</html>

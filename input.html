@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <p>まえ</p>
+    <pre><?= JSON.stringify(param.result) ?></pre>
+    <p>あと</p>
+    <p><?= getUrl() ?></p>
+    <form action="<?= getUrl() ?>" method="post">
+      <input type="submit" name="submit" value="do"/>
+    </form>
+    <pre><?= JSON.stringify(get('a')) ?></pre>
+  </body>
+</html>
