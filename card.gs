@@ -13,7 +13,8 @@ const cards = [
     {"rank": "K","power":13},
     {"rank": "A","power":14},
     {"rank": "Joker","power":99}
-  ]
+  ];
+  
 function isWin(myCard,otherCards) {
   if(myCard == "Joker" && !(otherCards in "2")){
     return true
